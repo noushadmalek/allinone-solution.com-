@@ -3,12 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Expert door-to-door podiatry and wound care by Dr. Samir Ouizi. Serving [Insert Location].">
+    <meta name="keywords" content="mobile podiatrist, wound care specialist, in-home foot care, diabetic wound care">
+    <title>Dr. Samir Ouizi | Mobile Podiatry & Wound Care</title>
+    
+    <style>
+        /* Base Styles & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        /* Navigation */
+        header {
+            background-color: #ffffff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .logo span {
+            color: #3498db;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        .btn-nav {
+            background-color: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://via.placeholder.com/1920x600') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn-primary {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Section Formatting */
+        section {
+            padding: 60px 5%;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .about-text h3 {
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        .credentials {
+            margin-top: 20px;
+            background: #fff;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #ffffff;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h4 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            nav ul {
+                display: none; /* Add a hamburger menu script for full mobile functionality */
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>My first website</h1>
-    <h2>Late Mowlovi Abdul Gani</h2>
-    <h2>Hazi Muhammed Abdul Malek</h2>
-    <h3>Muhammed Noushad malek</h3>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">Dr. Samir <span>Ouizi</span></div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#book" class="btn-nav">Book Home Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Expert Podiatry & Wound Care at Your Doorstep</h1>
+        <p>Professional, compassionate foot care brought directly to your home. Certified Canadian Wound Care Specialist with 25 years of international experience.</p>
+        <a href="#book" class="btn-primary">Request an Appointment</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">Meet Dr. Samir Ouizi</h2>
+        <div class="about-grid">
+            <div class="about-image">
+                <!-- Replace with actual client photo -->
+                <img src="https://via.placeholder.com/500x400" alt="Dr. Samir Ouizi" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+            <div class="about-text">
+                <h3>Certified Canadian Wound Care Specialist</h3>
+                <p>Originally from Casablanca, Morocco, Dr. Ouizi completed his Podiatric Medicine degree at the prestigious Institution Superieure De Podiatrie, Hopital Universitaire de Bruggman in Brussels, Belgium.</p>
+                <p><br>Dedicated to advancing podiatric medicine, he actively participates in international scientific research, ensuring his patients receive the most modern and effective treatments available without leaving their homes.</p>
+                
+                <div class="credentials">
+                    <strong>Key Credentials:</strong>
+                    <ul>
+                        <li>25 Years of Clinical Experience</li>
+                        <li>International Inter-professional Wound Care Certificate (Toronto, Ontario - 2006)</li>
+                        <li>Specialist in Lower Limb Injury Prevention</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">In-Home Treatments</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>Diabetic Wound Care</h4>
+                <p>Specialized management and treatment of lower limb wounds tailored for diabetic patients.</p>
+            </div>
+            <div class="service-card">
+                <h4>Biomechanics</h4>
+                <p>Assessment of foot function and gait to address pain and improve mobility.</p>
+            </div>
+            <div class="service-card">
+                <h4>Skin & Nail Care</h4>
+                <p>Comprehensive treatment for calluses, corns, thickened nails, and fungal infections.</p>
+            </div>
+            <div class="service-card">
+                <h4>Nail Surgery</h4>
+                <p>Safe and sterile surgical correction of ingrown toenails performed in your home.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Dr. Samir Ouizi - Mobile Podiatry & Wound Care. All rights reserved.</p>
+        <p>Serving [Insert City/Region Name Here]</p>
+    </footer>
+
 </body>
 </html>
